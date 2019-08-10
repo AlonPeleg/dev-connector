@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://alon123:alon123@devconnector-elhcn.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "mysecrettoken"
+  "jwtSecret": "mysecrettoken",
+  "githubClientId": "dc0f919aad5f311ec3aa",
+  "githubSecret": "6ceed17f18a13300dfaf1dcd921617b40fc70655"
 }

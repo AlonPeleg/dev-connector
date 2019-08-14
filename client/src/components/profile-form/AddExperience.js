@@ -37,7 +37,7 @@ const AddExperience = ({ addExperience }) => {
             placeholder="* Job Title"
             name="title"
             value={title}
-            onChange={e => onchange(e)}
+            onChange={e => onChange(e)}
             required
           />
         </div>
@@ -47,7 +47,7 @@ const AddExperience = ({ addExperience }) => {
             placeholder="* Company"
             name="company"
             value={company}
-            onChange={e => onchange(e)}
+            onChange={e => onChange(e)}
             required
           />
         </div>
@@ -57,7 +57,7 @@ const AddExperience = ({ addExperience }) => {
             placeholder="Location"
             name="location"
             value={location}
-            onChange={e => onchange(e)}
+            onChange={e => onChange(e)}
           />
         </div>
         <div className="form-group">
@@ -66,7 +66,7 @@ const AddExperience = ({ addExperience }) => {
             type="date"
             name="from"
             value={from}
-            onChange={e => onchange(e)}
+            onChange={e => onChange(e)}
           />
         </div>
         <div className="form-group">
@@ -90,7 +90,7 @@ const AddExperience = ({ addExperience }) => {
             type="date"
             name="to"
             value={to}
-            onChange={e => onchange(e)}
+            onChange={e => onChange(e)}
             disabled={toDateDisabled ? "disabled" : ""}
           />
         </div>
@@ -101,7 +101,7 @@ const AddExperience = ({ addExperience }) => {
             rows="5"
             placeholder="Job Description"
             value={description}
-            onchange={e => onchange(e)}
+            onChange={e => onChange(e)}
           />
         </div>
         <input type="submit" value="Submit" className="btn btn-primary my-1" />

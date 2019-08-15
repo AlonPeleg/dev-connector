@@ -7,14 +7,13 @@ import DashboardAction from "./DashboardAction";
 import { getCurrentProfile } from "../../actions/profile";
 
 const Dashboard = ({
+  getCurrentProfile,
   auth: { user },
-  profile: { profile, loading },
-  getCurrentProfile
+  profile: { profile, loading }
 }) => {
   useEffect(() => {
     getCurrentProfile();
-    // eslint-disable-next-line
-  }, []);
+  }, [getCurrentProfile]);
 
   return loading && profile === null ? (
     <Spinner />

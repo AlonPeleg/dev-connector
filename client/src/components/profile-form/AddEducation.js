@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { addEducation } from "../../actions/profile";
@@ -52,7 +52,6 @@ const AddEducation = ({ addEducation, history }) => {
             name="school"
             value={school}
             onChange={e => onChange(e)}
-            required
           />
         </div>
         <div className="form-group">
@@ -62,13 +61,12 @@ const AddEducation = ({ addEducation, history }) => {
             name="degree"
             value={degree}
             onChange={e => onChange(e)}
-            required
           />
         </div>
         <div className="form-group">
           <input
             type="text"
-            placeholder="Field of Study"
+            placeholder="* Field of Study"
             name="fieldofstudy"
             value={fieldofstudy}
             onChange={e => onChange(e)}
